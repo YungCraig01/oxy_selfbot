@@ -77,4 +77,4 @@ if(message.content === 'x.spam') {
   }
 }) 
        
-bot.login('//your token')
+bot.login('token')
