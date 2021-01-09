@@ -75,7 +75,7 @@ if(message.content === 'x.spam') {
   if(message.content === 'x.info') {
   const xinfo = new Discord.RichEmbed()
   .setTitle("Informations")
-  .setDescription("**The bot was created 29.7.2020 by YCG, Thanks for using oxy selfbot!**")
+  .setDescription("**The bot was created 2021 by YCG (YungCraig01), Thanks for using oxy selfbot!**")
   .setFooter("Thank you for using OxyBrain")
   .setColor("RANDOM")
   message.channel.send(xinfo)
