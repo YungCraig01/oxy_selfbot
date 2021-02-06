@@ -1,6 +1,6 @@
 # oxy_selfbot
 
-# **Oxy Selfbot** 
+# **Oxy Selfbot - Open Src Selfbot** 
 
 ### **How to set up a (self)bot**
 
